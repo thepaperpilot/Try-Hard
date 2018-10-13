@@ -26,5 +26,6 @@ public class TransformButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     void Poof() {
         Object.Instantiate(TransformMenu.instance.poof, TransformGun.currentTarget.transform);
+        TransformMenu.instance.poofSound.Play();
     }
 }

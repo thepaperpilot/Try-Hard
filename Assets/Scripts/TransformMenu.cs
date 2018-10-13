@@ -1,10 +1,14 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class TransformMenu : MonoBehaviour {
 
     public static TransformMenu instance = null;
 
     public GameObject poof;
+
+    [HideInInspector]
+    public AudioSource poofSound;
     
 	void Awake () {
         if (instance == null)
@@ -14,6 +18,7 @@ public class TransformMenu : MonoBehaviour {
             return;
         }
 
+        poofSound = GetComponent<AudioSource>();
         gameObject.SetActive(false);
     }
 }
