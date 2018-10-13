@@ -13,6 +13,7 @@ public class TransformGun : MonoBehaviour {
     public EventSystem eventSystem;
     public GraphicRaycaster graphicRaycaster;
     public FirstPersonController fps;
+    public GameObject deathParticles;
     public float bulletTimeSpeed = 0.2f;
 
     void Awake() {
@@ -61,7 +62,7 @@ public class TransformGun : MonoBehaviour {
 
     public static void UpdateOutline(Transform transform, float width) {
         foreach (MeshRenderer r in transform.GetComponentsInChildren<MeshRenderer>()) {
-            r.material.SetFloat("_FirstOutlineWidth", width / r.transform.lossyScale.x);
+            r.material.SetFloat("_OutlineWidth", width / r.transform.lossyScale.x);
         }
     }
 }
