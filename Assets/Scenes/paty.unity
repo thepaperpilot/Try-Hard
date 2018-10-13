@@ -7093,6 +7093,18 @@ Prefab:
       propertyPath: m_TagString
       value: transformable
       objectReference: {fileID: 0}
+    - target: {fileID: 1177961848266292, guid: 00d521677533e0e4396d659bf0c8ebc9, type: 2}
+      propertyPath: m_TagString
+      value: transformable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144576076856474, guid: 00d521677533e0e4396d659bf0c8ebc9, type: 2}
+      propertyPath: m_TagString
+      value: transformable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738720279289386, guid: 00d521677533e0e4396d659bf0c8ebc9, type: 2}
+      propertyPath: m_TagString
+      value: transformable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d521677533e0e4396d659bf0c8ebc9, type: 2}
   m_IsPrefabAsset: 0
