@@ -7,7 +7,7 @@ public class TransformButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerEnter(PointerEventData eventData) {
         GameObject gameObject = Object.Instantiate(transformationResult);
-        gameObject.GetComponent<MeshRenderer>().material.SetFloat("_FirstOutlineWidth", 0.025f);
+        TransformGun.UpdateOutline(gameObject.transform, 0.025f);
         Transform transform = TransformGun.currentTarget.transform;
         gameObject.transform.SetPositionAndRotation(transform.position, transform.rotation);
         if (TransformGun.currentTarget == TransformGun.originalTarget)

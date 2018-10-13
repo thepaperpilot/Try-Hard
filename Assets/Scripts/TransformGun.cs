@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityStandardAssets.Characters.FirstPerson;
@@ -24,7 +25,7 @@ public class TransformGun : MonoBehaviour {
                     // We hit something transformable
                     // Finally we can actually do something!
                     originalTarget = currentTarget = hit.transform.gameObject;
-                    originalTarget.GetComponent<MeshRenderer>().material.SetFloat("_FirstOutlineWidth", 0.025f);
+                    UpdateOutline(originalTarget.transform, 0.025f);
                     TransformMenu.instance.gameObject.SetActive(true);
                     Time.timeScale = bulletTimeSpeed;
                     fps.enabled = false;
@@ -36,7 +37,7 @@ public class TransformGun : MonoBehaviour {
         if (Input.GetMouseButtonUp(1)) {
             // Reset everything
             if (currentTarget)
-                currentTarget.GetComponent<MeshRenderer>().material.SetFloat("_FirstOutlineWidth", 0);
+                UpdateOutline(currentTarget.transform, 0);
             if (originalTarget != currentTarget)
                 Destroy(originalTarget);
             originalTarget = currentTarget = null;
@@ -45,6 +46,13 @@ public class TransformGun : MonoBehaviour {
             fps.enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+        }
+    }
+
+    public static void UpdateOutline(Transform transform, float width) {
+        foreach (MeshRenderer r in transform.GetComponentsInChildren<MeshRenderer>()) {
+            Debug.Log(r.transform.lossyScale);
+            r.material.SetFloat("_FirstOutlineWidth", width / r.transform.lossyScale.x);
         }
     }
 }
