@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class TransformGun : MonoBehaviour {
 
     public static GameObject currentTarget;
+    public static GameObject originalTarget;
 
     public EventSystem eventSystem;
     public GraphicRaycaster graphicRaycaster;
@@ -22,31 +23,15 @@ public class TransformGun : MonoBehaviour {
                 if (hit.transform.CompareTag("transformable")) {
                     // We hit something transformable
                     // Finally we can actually do something!
-                    currentTarget = hit.transform.gameObject;
+                    originalTarget = currentTarget = hit.transform.gameObject;
                     TransformMenu.instance.gameObject.SetActive(true);
                     Time.timeScale = bulletTimeSpeed;
                 }
             }
         }
         if (Input.GetMouseButtonUp(1)) {
-            // Find out which (if any) button we were on when we lifted up
-            PointerEventData data = new PointerEventData(eventSystem);
-            data.position = Input.mousePosition;
-            List<RaycastResult> results = new List<RaycastResult>();
-            //Raycast using the Graphics Raycaster and mouse click position
-            graphicRaycaster.Raycast(data, results);
-            results.Any(r => {
-                TransformButton button = r.gameObject.GetComponent<TransformButton>();
-                // If its one of our buttons, transform our object!
-                if (button) {
-                    button.Transform();
-                    return true;
-                }
-                return false;
-            });
-
             // Reset everything
-            currentTarget = null;
+            originalTarget = currentTarget = null;
             TransformMenu.instance.gameObject.SetActive(false);
             Time.timeScale = 1;
         }
