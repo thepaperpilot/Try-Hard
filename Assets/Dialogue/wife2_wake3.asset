@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44e7014dcf7914e47947403613ae5c20, type: 3}
+  m_Name: wife2_wake3
+  m_EditorClassIdentifier: 
+  portrait: {fileID: 0}
+  text: "Addison.  Addison, wake up.  \nAddison, can you hear me?\r"
+  voice: {fileID: 8300000, guid: 8192a3becc0c42a41a3dc7067b422390, type: 3}
