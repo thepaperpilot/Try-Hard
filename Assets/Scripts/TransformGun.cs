@@ -30,7 +30,6 @@ public class TransformGun : MonoBehaviour {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 100, Color.yellow, 1);
             if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, ~(1 << 9))) {
                 // We hit something!
-                Debug.Log(hit.transform.name);
                 if (hit.transform.CompareTag("transformable")) {
                     // We hit something transformable
                     // Finally we can actually do something!
@@ -61,7 +60,6 @@ public class TransformGun : MonoBehaviour {
 
     public static void UpdateOutline(Transform transform, float width) {
         foreach (MeshRenderer r in transform.GetComponentsInChildren<MeshRenderer>()) {
-            Debug.Log(r.transform.lossyScale);
             r.material.SetFloat("_FirstOutlineWidth", width / r.transform.lossyScale.x);
         }
     }
