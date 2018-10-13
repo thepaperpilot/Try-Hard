@@ -30,10 +30,11 @@ public class TransformGun : MonoBehaviour {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 100, Color.yellow, 1);
             if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, ~(1 << 9))) {
                 // We hit something!
-                if (hit.transform.CompareTag("transformable")) {
+                TransformableObject target = hit.transform.GetComponentInParent<TransformableObject>();
+                if (target) {
                     // We hit something transformable
                     // Finally we can actually do something!
-                    originalTarget = currentTarget = hit.transform.gameObject;
+                    originalTarget = currentTarget = target.gameObject;
                     UpdateOutline(originalTarget.transform, 0.025f);
                     TransformMenu.instance.gameObject.SetActive(true);
                     Time.timeScale = bulletTimeSpeed;
