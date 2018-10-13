@@ -20,10 +20,11 @@ public class TransformButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public void OnPointerExit(PointerEventData eventData) {
         Destroy(TransformGun.currentTarget);
         TransformGun.originalTarget.SetActive(true);
+        TransformGun.currentTarget = TransformGun.originalTarget;
         Poof();
     }
 
     void Poof() {
-
+        Object.Instantiate(TransformMenu.instance.poof, TransformGun.currentTarget.transform);
     }
 }

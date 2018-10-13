@@ -3,6 +3,8 @@
 public class TransformMenu : MonoBehaviour {
 
     public static TransformMenu instance = null;
+
+    public GameObject poof;
     
 	void Awake () {
         if (instance == null)
