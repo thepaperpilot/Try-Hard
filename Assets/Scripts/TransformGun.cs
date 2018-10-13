@@ -6,6 +6,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class TransformGun : MonoBehaviour {
 
+    public static TransformGun instance;
     public static GameObject currentTarget;
     public static GameObject originalTarget;
 
@@ -13,13 +14,21 @@ public class TransformGun : MonoBehaviour {
     public GraphicRaycaster graphicRaycaster;
     public FirstPersonController fps;
     public float bulletTimeSpeed = 0.2f;
-    
+
+    void Awake() {
+        if (instance == null)
+            instance = this;
+        else if (instance != this) {
+            Destroy(gameObject);
+        }
+    }
+
     private void Update() {
         if (Input.GetMouseButtonDown(1)) {
             // We right clicked, lets see if we should open the transform menu
             RaycastHit hit;
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 100, Color.yellow, 1);
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity)) {
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, 1 << 9)) {
                 // We hit something!
                 if (hit.transform.CompareTag("transformable")) {
                     // We hit something transformable
