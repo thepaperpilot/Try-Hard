@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Image))]
@@ -22,7 +20,7 @@ public class RapidTalk : MonoBehaviour {
     }
 
     void Update() {
-        delta += Time.deltaTime;
+        delta += Time.fixedUnscaledTime;
         if (delta >= durationBetweenFrames) {
             delta -= durationBetweenFrames;
             frame++;

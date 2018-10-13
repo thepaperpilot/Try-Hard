@@ -53,7 +53,7 @@ public class DialogueManager : MonoBehaviour {
     }
     
     IEnumerator Delay(float seconds, Action callback) {
-        yield return new WaitForSeconds(seconds);
+        yield return new WaitForSecondsRealtime(seconds);
         callback();
     }
 }

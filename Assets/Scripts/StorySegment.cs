@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class StoryManager : MonoBehaviour {
+public class StorySegment : MonoBehaviour {
 
     public Dialogue[] story;
 

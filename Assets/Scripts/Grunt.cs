@@ -38,10 +38,12 @@ public class Grunt : MonoBehaviour {
             DialogueManager.instance.PlayDialogue(options[Random.Range(0, options.Length)]);
     }
 
-    void OnCollisionEnter(Collision collision) {
+    void OnTriggerEnter(Collider collider) {
         // If colliding with player
-        if (collision.gameObject.layer == 9) {
+        if (collider.gameObject.layer == 9) {
             source.Play();
+            Time.timeScale = 0;
+            collider.gameObject.GetComponentInChildren<TransformGun>().deathParticles.SetActive(true);
         }
     }
 }
