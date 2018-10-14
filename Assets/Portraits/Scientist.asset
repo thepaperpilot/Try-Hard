@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Name: Scientist
   m_EditorClassIdentifier: 
   frames:
-  - {fileID: 21300000, guid: 0cea659528ef8f84080410ea7c6368b7, type: 3}
-  - {fileID: 21300000, guid: 72573f0b68a30704dade55c129c13ef8, type: 3}
+  - {fileID: 21300000, guid: 7275c80e264effb46be0264320de9bfe, type: 3}
