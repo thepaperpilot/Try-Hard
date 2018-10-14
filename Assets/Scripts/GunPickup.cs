@@ -18,6 +18,7 @@ public class GunPickup : MonoBehaviour {
             AudioSource audio = gameObject.GetComponent<AudioSource>();
             audio.Play();
             story.enabled = true;
+            Destroy(gameObject);
         }
     }
 }
