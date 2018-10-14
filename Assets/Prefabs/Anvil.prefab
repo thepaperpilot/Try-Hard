@@ -203,7 +203,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1479359989656820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.872, y: 1.72, z: -19.846}
+  m_LocalPosition: {x: -6.684746, y: -0.26161355, z: -26.60572}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4202819643525740}
@@ -243,7 +243,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ad6c43b5729c5d449b7a5df641535037, type: 2}
+  - {fileID: 2100000, guid: 501b4afc4aedc9d4cacaec300dc8b6b1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -278,7 +278,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ad6c43b5729c5d449b7a5df641535037, type: 2}
+  - {fileID: 2100000, guid: 501b4afc4aedc9d4cacaec300dc8b6b1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -313,7 +313,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ad6c43b5729c5d449b7a5df641535037, type: 2}
+  - {fileID: 2100000, guid: 501b4afc4aedc9d4cacaec300dc8b6b1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -348,7 +348,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ad6c43b5729c5d449b7a5df641535037, type: 2}
+  - {fileID: 2100000, guid: 501b4afc4aedc9d4cacaec300dc8b6b1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -383,7 +383,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ad6c43b5729c5d449b7a5df641535037, type: 2}
+  - {fileID: 2100000, guid: 501b4afc4aedc9d4cacaec300dc8b6b1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -418,7 +418,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ad6c43b5729c5d449b7a5df641535037, type: 2}
+  - {fileID: 2100000, guid: 501b4afc4aedc9d4cacaec300dc8b6b1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
