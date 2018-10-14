@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33818666791228632}
   - component: {fileID: 23834089408682692}
   - component: {fileID: 65485470187921762}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: topChair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 33561872340117766}
   - component: {fileID: 23539049751844792}
   - component: {fileID: 65402730334068408}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: legTable1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 33943153934167040}
   - component: {fileID: 23185701116422228}
   - component: {fileID: 65338544357053082}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: legTable3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 33266394641878492}
   - component: {fileID: 23940534869103680}
   - component: {fileID: 65480737470553292}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: legTable2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 33224466390801288}
   - component: {fileID: 23186309262134698}
   - component: {fileID: 65405532818930986}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: legTable4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
