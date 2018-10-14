@@ -2050,6 +2050,12 @@ Prefab:
       propertyPath: m_RunSpeed
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 114132068807536420, guid: a780c023413e7464a995a7ff247b4680,
+        type: 2}
+      propertyPath: story.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: ad7d0b67e97d60a46ab2da3989b280de,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a780c023413e7464a995a7ff247b4680, type: 2}
   m_IsPrefabAsset: 0
@@ -17495,6 +17501,12 @@ Prefab:
       propertyPath: startPos.z
       value: -9
       objectReference: {fileID: 0}
+    - target: {fileID: 114162295309965394, guid: 1d36a3642b657c14d89c9de60b301a52,
+        type: 2}
+      propertyPath: story.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 6499cf2d0c6e4ee4884ffa00b90ebf97,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d36a3642b657c14d89c9de60b301a52, type: 2}
   m_IsPrefabAsset: 0
