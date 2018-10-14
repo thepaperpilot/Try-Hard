@@ -3,8 +3,21 @@ using UnityEngine;
 
 public class BGM : MonoBehaviour {
 
+    public static BGM instance;
+
     public AudioSource rain;
     public AudioSource piano;
+
+    void Awake() {
+        if (instance == null) {
+            instance = this;
+        } else {
+            Destroy(gameObject);
+            return;
+        }
+
+        DontDestroyOnLoad(gameObject);
+    }
 
     void Start() {
         StartCoroutine(DelayBGM());

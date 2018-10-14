@@ -39,6 +39,7 @@ public class IntroHandler : MonoBehaviour {
         tutorial1.enabled = true;
         fps.enabled = true;
         audio.enabled = true;
+        RestartManager.instance.introSeen = true;
         Destroy(gameObject);
     }
 

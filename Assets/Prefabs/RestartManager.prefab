@@ -65,4 +65,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cea46b9c52ad5b444ac948d9d89cd163, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos: {x: 0, y: 0, z: -2}
+  startPos: {x: 0, y: 0.1770514, z: -9}
+  introSeen: 0
