@@ -195,7 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSee:
   - {fileID: 11400000, guid: f5ca61c0371986a42b7186241a1dd9af, type: 2}
-  audio: {fileID: 0}
+  audio: {fileID: 82465837524495778}
   deathSounds:
   - {fileID: 8300000, guid: 80238e3742d8025448da0422e1d2c680, type: 3}
   - {fileID: 8300000, guid: 2693801a459464048981b968a5bc3cbf, type: 3}
