@@ -15,6 +15,7 @@ public class TransformGun : MonoBehaviour {
     public FirstPersonController fps;
     public GameObject deathParticles;
     public float bulletTimeSpeed = 0.2f;
+    public bool gunAquired = false;
 
     void Awake() {
         if (instance == null)
@@ -24,8 +25,13 @@ public class TransformGun : MonoBehaviour {
         }
     }
 
+    void AquireGun()
+    {
+        gunAquired = true;
+    }
+
     private void Update() {
-        if (Input.GetMouseButtonDown(1)) {
+        if (Input.GetMouseButtonDown(1) && gunAquired) {
             // We right clicked, lets see if we should open the transform menu
             RaycastHit hit;
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 100, Color.yellow, 1);
@@ -45,7 +51,7 @@ public class TransformGun : MonoBehaviour {
                 }
             }
         }
-        if (Input.GetMouseButtonUp(1)) {
+        if (Input.GetMouseButtonUp(1) && gunAquired) {
             // Reset everything
             if (currentTarget)
                 UpdateOutline(currentTarget.transform, 0);
