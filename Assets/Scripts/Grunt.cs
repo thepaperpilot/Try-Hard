@@ -6,13 +6,13 @@ using UnityEngine.AI;
 public class Grunt : MonoBehaviour {
 
     public Dialogue[] onSee;
+    public AudioSource killSound;
+    public AudioSource deathSound;
 
     NavMeshAgent agent;
-    AudioSource source;
 
     void Awake() {
         agent = GetComponent<NavMeshAgent>();
-        source = GetComponent<AudioSource>();
     }
 
     void Update() {
@@ -41,9 +41,19 @@ public class Grunt : MonoBehaviour {
     void OnTriggerEnter(Collider collider) {
         // If colliding with player
         if (collider.gameObject.layer == 9) {
-            source.Play();
+            killSound.Play();
             Time.timeScale = 0;
             collider.gameObject.GetComponentInChildren<TransformGun>().deathParticles.SetActive(true);
+        } else if (collider.gameObject.layer == 10) {
+
+        }
+    }
+    void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.layer == 10) {
+            deathSound.Play();
+            Destroy(gameObject, deathSound.clip.length);
+            Destroy(gameObject.GetComponent<BoxCollider>());
+            Destroy(gameObject.GetComponent<MeshRenderer>());
         }
     }
 }
