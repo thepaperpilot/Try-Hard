@@ -13,4 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portrait: {fileID: 11400000, guid: bc1e89473753270408755628569b8cd3, type: 2}
   text: "That's my commander!  \nGlad to have you back!\r"
-  voice: {fileID: 8300000, guid: cb079950b8da9e14db67b2829e97eb1e, type: 3}
+  voice: {fileID: 8300000, guid: 77992170071ce014b9c1e540c32ff175, type: 3}

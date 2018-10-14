@@ -13,4 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portrait: {fileID: 11400000, guid: 20de25f4057e9d04e91527ac960147a5, type: 2}
   text: "You shouldn't have come here.\r"
-  voice: {fileID: 8300000, guid: eb60b5c85d6393744810feefddf7498e, type: 3}
+  voice: {fileID: 8300000, guid: 52f84944be1c8e447ac1b24a88ac0e4c, type: 3}

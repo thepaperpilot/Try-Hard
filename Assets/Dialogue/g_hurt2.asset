@@ -13,4 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portrait: {fileID: 11400000, guid: 20de25f4057e9d04e91527ac960147a5, type: 2}
   text: "*Grunt*\r"
-  voice: {fileID: 8300000, guid: 29add6947c9a08a409f68692128dd8d0, type: 3}
+  voice: {fileID: 8300000, guid: ad665fb34aa785b45b33fd4191c800ac, type: 3}

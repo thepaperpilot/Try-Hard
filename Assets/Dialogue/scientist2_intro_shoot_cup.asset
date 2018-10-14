@@ -13,4 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portrait: {fileID: 11400000, guid: d4b698b3f92854346900452c249478b5, type: 2}
   text: "Now aim the gun at the cup, and pull the trigger.\r"
-  voice: {fileID: 8300000, guid: f61c75a76ee28c24fa6b25bbb260236c, type: 3}
+  voice: {fileID: 8300000, guid: a0538eb35640f38479e5092266985cc4, type: 3}

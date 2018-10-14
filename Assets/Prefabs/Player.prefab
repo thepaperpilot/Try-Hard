@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 124797888596396746}
   - component: {fileID: 114066954340729678}
   - component: {fileID: 114549584398725418}
+  - component: {fileID: 114682799648251308}
   m_Layer: 9
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
@@ -164,16 +165,16 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1464597549654526}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0.93531513, z: -0, w: 0.35381576}
+  m_LocalPosition: {x: 0.001985876, y: 1.03, z: -9.014752}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4536506816914192}
   - {fileID: 4164977556221078}
   - {fileID: 4704784298117942}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -138.55801, z: 0}
 --- !u!4 &4536506816914192
 Transform:
   m_ObjectHideFlags: 1
@@ -642,6 +643,7 @@ MonoBehaviour:
   intro1: {fileID: 114720600593828108}
   intro2: {fileID: 114836880129486964}
   tutorial1: {fileID: 114972036049533236}
+  player: {fileID: 0}
 --- !u!114 &114549584398725418
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -667,6 +669,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59a118d57dce66840bcf0d205772eee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114682799648251308
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1704975078927652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 12d9be167b06cb548ac43c92192c1364, type: 2}
 --- !u!114 &114720600593828108
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -705,8 +719,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IsWalking: 0
-  m_WalkSpeed: 5
-  m_RunSpeed: 10
+  m_WalkSpeed: 8
+  m_RunSpeed: 14
   m_RunstepLenghten: 0.7
   m_JumpSpeed: 10
   m_StickToGroundForce: 10
@@ -753,8 +767,8 @@ MonoBehaviour:
       m_RotationOrder: 4
   m_UseHeadBob: 1
   m_HeadBob:
-    HorizontalBobRange: 0.1
-    VerticalBobRange: 0.1
+    HorizontalBobRange: 0.05
+    VerticalBobRange: 0.05
     Bobcurve:
       serializedVersion: 2
       m_Curve:
@@ -812,8 +826,8 @@ MonoBehaviour:
     BobAmount: 0.1
   m_StepInterval: 5
   m_FootstepSounds:
-  - {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
-  - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
 --- !u!114 &114972036049533236

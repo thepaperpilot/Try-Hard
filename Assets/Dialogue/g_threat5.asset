@@ -13,4 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portrait: {fileID: 11400000, guid: 20de25f4057e9d04e91527ac960147a5, type: 2}
   text: "I'm gonna give you a bullet shower!\r"
-  voice: {fileID: 8300000, guid: d11760103eacf214896c1fbb6b362450, type: 3}
+  voice: {fileID: 8300000, guid: 2939df1ab745c3e459142fbfdb4391a9, type: 3}
