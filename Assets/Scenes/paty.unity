@@ -1575,7 +1575,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4356248183103818, guid: a780c023413e7464a995a7ff247b4680, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.03
       objectReference: {fileID: 0}
     - target: {fileID: 4356248183103818, guid: a780c023413e7464a995a7ff247b4680, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1614,6 +1614,43 @@ Prefab:
     - target: {fileID: 4356248183103818, guid: a780c023413e7464a995a7ff247b4680, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -138.55801
+      objectReference: {fileID: 0}
+    - target: {fileID: 4356248183103818, guid: a780c023413e7464a995a7ff247b4680, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4356248183103818, guid: a780c023413e7464a995a7ff247b4680, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4356248183103818, guid: a780c023413e7464a995a7ff247b4680, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114880831908990990, guid: a780c023413e7464a995a7ff247b4680,
+        type: 2}
+      propertyPath: m_HeadBob.HorizontalBobRange
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114880831908990990, guid: a780c023413e7464a995a7ff247b4680,
+        type: 2}
+      propertyPath: m_HeadBob.VerticalBobRange
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114880831908990990, guid: a780c023413e7464a995a7ff247b4680,
+        type: 2}
+      propertyPath: m_HeadBob.VerticaltoHorizontalRatio
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114880831908990990, guid: a780c023413e7464a995a7ff247b4680,
+        type: 2}
+      propertyPath: m_WalkSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114880831908990990, guid: a780c023413e7464a995a7ff247b4680,
+        type: 2}
+      propertyPath: m_RunSpeed
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a780c023413e7464a995a7ff247b4680, type: 2}
