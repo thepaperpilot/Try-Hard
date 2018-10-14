@@ -14,7 +14,6 @@ public class IntroHandler : MonoBehaviour {
     void Awake() {
         if (RestartManager.instance && RestartManager.instance.introSeen) {
             Destroy(gameObject);
-            player.gunAquired = false;
             return;
         }
 
