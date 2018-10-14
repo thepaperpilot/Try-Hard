@@ -15,7 +15,7 @@ public class TransformGun : MonoBehaviour {
     public FirstPersonController fps;
     public GameObject deathParticles;
     public float bulletTimeSpeed = 0.2f;
-    public bool gunAquired = false;
+    public bool gunAquired = true;
 
     void Awake() {
         if (instance == null)
@@ -23,11 +23,6 @@ public class TransformGun : MonoBehaviour {
         else if (instance != this) {
             Destroy(gameObject);
         }
-    }
-
-    void AquireGun()
-    {
-        gunAquired = true;
     }
 
     private void Update() {

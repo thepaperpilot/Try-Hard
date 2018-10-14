@@ -194,7 +194,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onSee:
-  - {fileID: 11400000, guid: f5ca61c0371986a42b7186241a1dd9af, type: 2}
+  - {fileID: 11400000, guid: d14f7fcf67dea5841b5a9b83a0329fd4, type: 2}
+  - {fileID: 11400000, guid: d354aba91da5f4b418dc697013da7ba0, type: 2}
+  - {fileID: 11400000, guid: 573a42a60a378c140be479844da926dc, type: 2}
+  - {fileID: 11400000, guid: 42be8a00c4d7e79428da37813fa599c9, type: 2}
+  - {fileID: 11400000, guid: e0f2fe2c66eae374b97bfc44368fca9a, type: 2}
+  - {fileID: 11400000, guid: 7021f15bd374ff943b07a218810df051, type: 2}
 --- !u!136 &136746495485871762
 CapsuleCollider:
   m_ObjectHideFlags: 1

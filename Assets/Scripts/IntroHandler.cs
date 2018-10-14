@@ -35,15 +35,20 @@ public class IntroHandler : MonoBehaviour {
         intro2.enabled = true;
     }
 
-    void PlayTutorialOne() {
-        tutorial1.enabled = true;
+    void AllowMovement() {
         fps.enabled = true;
         audio.enabled = true;
     }
 
+    void PlayTutorialOne() {
+        tutorial1.enabled = true;
+        RestartManager.instance.introSeen = true;
+        Destroy(gameObject, 5);
+    }
+
     IEnumerator DelayDisableFPS() {
         // We do this so its little initial jitter will happen during the black screen
-        yield return new WaitForSecondsRealtime(1);
+        yield return null;
         fps.enabled = false;
     }
 }

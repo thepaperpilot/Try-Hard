@@ -6,13 +6,14 @@ using UnityEngine.AI;
 public class Grunt : MonoBehaviour {
 
     public Dialogue[] onSee;
+    public Dialogue[] deathSounds;
+    public AudioSource audio;
 
     NavMeshAgent agent;
-    AudioSource source;
 
     void Awake() {
         agent = GetComponent<NavMeshAgent>();
-        source = GetComponent<AudioSource>();
+        audio = GetComponent<AudioSource>();
     }
 
     void Update() {
@@ -33,17 +34,34 @@ public class Grunt : MonoBehaviour {
         agent.isStopped = true;
     }
 
-    void PlayDialogue(Dialogue[] options) {
-        if (options.Length > 0)
-            DialogueManager.instance.PlayDialogue(options[Random.Range(0, options.Length)]);
+    float PlayDialogue(Dialogue[] options) {
+        if (options.Length > 0) {
+            Dialogue dialogue = options[Random.Range(0, options.Length)];
+            DialogueManager.instance.PlayDialogue(dialogue);
+            return dialogue.voice.length;
+        }
+        return 0;
     }
 
     void OnTriggerEnter(Collider collider) {
         // If colliding with player
         if (collider.gameObject.layer == 9) {
-            source.Play();
+            audio.Play();
             Time.timeScale = 0;
             collider.gameObject.GetComponentInChildren<TransformGun>().deathParticles.SetActive(true);
+        } else if (collider.gameObject.layer == 10) {
+            Die();
+        } else if (collider.gameObject.CompareTag("transformable")) {
+            Rigidbody rb = collider.gameObject.GetComponent<Rigidbody>();
+            if (rb.velocity.magnitude > 0) {
+                Die();
+            }
         }
+    }
+
+    void Die() {
+        Destroy(gameObject, PlayDialogue(deathSounds));
+        Destroy(gameObject.GetComponent<BoxCollider>());
+        Destroy(gameObject.GetComponent<MeshRenderer>());
     }
 }

@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44e7014dcf7914e47947403613ae5c20, type: 3}
   m_Name: g_calm_hurt
   m_EditorClassIdentifier: 
-  portrait: {fileID: 0}
+  portrait: {fileID: 11400000, guid: 20de25f4057e9d04e91527ac960147a5, type: 2}
   text: "Ow.\r"
   voice: {fileID: 8300000, guid: 80238e3742d8025448da0422e1d2c680, type: 3}
