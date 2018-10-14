@@ -6,8 +6,8 @@ using UnityEngine.AI;
 public class Grunt : MonoBehaviour {
 
     public Dialogue[] onSee;
+    public Dialogue[] deathSounds;
     public AudioSource audio;
-    public AudioClip[] deathSounds;
 
     NavMeshAgent agent;
 
@@ -34,9 +34,13 @@ public class Grunt : MonoBehaviour {
         agent.isStopped = true;
     }
 
-    void PlayDialogue(Dialogue[] options) {
-        if (options.Length > 0)
-            DialogueManager.instance.PlayDialogue(options[Random.Range(0, options.Length)]);
+    float PlayDialogue(Dialogue[] options) {
+        if (options.Length > 0) {
+            Dialogue dialogue = options[Random.Range(0, options.Length)];
+            DialogueManager.instance.PlayDialogue(dialogue);
+            return dialogue.voice.length;
+        }
+        return 0;
     }
 
     void OnTriggerEnter(Collider collider) {
@@ -56,9 +60,7 @@ public class Grunt : MonoBehaviour {
     }
 
     void Die() {
-        AudioClip clip = deathSounds[Random.Range(0, deathSounds.Length)];
-        audio.PlayOneShot(clip);
-        Destroy(gameObject, clip.length);
+        Destroy(gameObject, PlayDialogue(deathSounds));
         Destroy(gameObject.GetComponent<BoxCollider>());
         Destroy(gameObject.GetComponent<MeshRenderer>());
     }

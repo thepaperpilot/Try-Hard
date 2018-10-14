@@ -200,13 +200,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 42be8a00c4d7e79428da37813fa599c9, type: 2}
   - {fileID: 11400000, guid: e0f2fe2c66eae374b97bfc44368fca9a, type: 2}
   - {fileID: 11400000, guid: 7021f15bd374ff943b07a218810df051, type: 2}
-  audio: {fileID: 82465837524495778}
   deathSounds:
-  - {fileID: 8300000, guid: 80238e3742d8025448da0422e1d2c680, type: 3}
-  - {fileID: 8300000, guid: 2693801a459464048981b968a5bc3cbf, type: 3}
-  - {fileID: 8300000, guid: e77ce8a23ec34c34ea5eac7ec31819a2, type: 3}
-  - {fileID: 8300000, guid: 4d32883de0d37b04ebec163e3052bdac, type: 3}
-  - {fileID: 8300000, guid: 28087688273d0ce4890f6304faf80660, type: 3}
+  - {fileID: 11400000, guid: 29a6cd46363120846a8ea086abc91539, type: 2}
+  - {fileID: 11400000, guid: a0539e16b82825f43b59de69ee21c884, type: 2}
+  - {fileID: 11400000, guid: 75c6a6c7cd5d33e46906d93de0439afc, type: 2}
+  - {fileID: 11400000, guid: 285f00085f0ee7541b2ccc2adedb1a1c, type: 2}
+  - {fileID: 11400000, guid: 4c1f1f732da8d4c45aa6aeee793e7752, type: 2}
+  - {fileID: 11400000, guid: 7cab923f072f40148bab12d9fec1f603, type: 2}
+  audio: {fileID: 82465837524495778}
 --- !u!136 &136746495485871762
 CapsuleCollider:
   m_ObjectHideFlags: 1
