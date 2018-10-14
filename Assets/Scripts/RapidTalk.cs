@@ -20,7 +20,7 @@ public class RapidTalk : MonoBehaviour {
     }
 
     void Update() {
-        delta += Time.fixedUnscaledTime;
+        delta += Time.unscaledDeltaTime;
         if (delta >= durationBetweenFrames) {
             delta -= durationBetweenFrames;
             frame++;
@@ -28,5 +28,9 @@ public class RapidTalk : MonoBehaviour {
                 frame = 0;
             image.sprite = frames[frame];
         }
+    }
+
+    public void Reset() {
+        image.sprite = frames[frame = 0];
     }
 }

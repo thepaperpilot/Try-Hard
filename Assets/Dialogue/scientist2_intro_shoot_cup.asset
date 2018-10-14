@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44e7014dcf7914e47947403613ae5c20, type: 3}
   m_Name: scientist2_intro_shoot_cup
   m_EditorClassIdentifier: 
-  portrait: {fileID: 0}
+  portrait: {fileID: 11400000, guid: d4b698b3f92854346900452c249478b5, type: 2}
   text: "Now aim the gun at the cup, and pull the trigger.\r"
   voice: {fileID: 8300000, guid: f61c75a76ee28c24fa6b25bbb260236c, type: 3}

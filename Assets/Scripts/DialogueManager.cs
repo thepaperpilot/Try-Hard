@@ -38,11 +38,13 @@ public class DialogueManager : MonoBehaviour {
         portrait.enabled = true;
         if (dialogue.portrait)
             portrait.frames = dialogue.portrait.frames;
+        portrait.Reset();
         text.text = dialogue.text;
         source.PlayOneShot(dialogue.voice);
 
         // Wait until the audio clip finished
         StartCoroutine(Delay(dialogue.voice.length, () => {
+            portrait.Reset();
             portrait.enabled = false;
             // And then wait some time before being ready for the next dialogue to show
             StartCoroutine(Delay(delayBetweenDialogues, () => {

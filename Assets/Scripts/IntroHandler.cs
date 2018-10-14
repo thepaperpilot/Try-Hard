@@ -43,7 +43,7 @@ public class IntroHandler : MonoBehaviour {
     void PlayTutorialOne() {
         tutorial1.enabled = true;
         RestartManager.instance.introSeen = true;
-        Destroy(gameObject);
+        Destroy(gameObject, 5);
     }
 
     IEnumerator DelayDisableFPS() {
