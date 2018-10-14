@@ -49,7 +49,7 @@ public class Grunt : MonoBehaviour {
             audio.Play();
             Time.timeScale = 0;
             collider.gameObject.GetComponentInChildren<TransformGun>().deathParticles.SetActive(true);
-        } else if (collider.gameObject.layer == 10) {
+        } else if (collider.gameObject.layer == 10 && collider.gameObject.GetComponent<TransformableObject>().isThrown) {
             Die();
         } else if (collider.gameObject.CompareTag("transformable")) {
             Rigidbody rb = collider.gameObject.GetComponent<Rigidbody>();

@@ -15,7 +15,9 @@ public class Grabber : MonoBehaviour {
                 Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 100, Color.green, 1);
                 if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickupDistance, 1 << 10)) {
                     // We hit something!
-                    heldItem = hit.transform.GetComponentInParent<TransformableObject>().transform;
+                    TransformableObject tObject = hit.transform.GetComponentInParent<TransformableObject>();
+                    tObject.isThrown = true;
+                    heldItem = tObject.transform;
                     heldItem.gameObject.layer = 11;
                     heldItem.SetParent(heldItemContainer);
                     heldItem.localPosition = Vector3.zero;
