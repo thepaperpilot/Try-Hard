@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44e7014dcf7914e47947403613ae5c20, type: 3}
+  m_Name: sarge_intro
+  m_EditorClassIdentifier: 
+  portrait: {fileID: 11400000, guid: bc1e89473753270408755628569b8cd3, type: 2}
+  text: "The Numbers took you when they killed your wife, and your kid, and your dog,
+    and your LOVER!  If you don't get out now, they'll kill you too.\r"
+  voice: {fileID: 8300000, guid: d87678c065e9fb74390d6d41195a28eb, type: 3}

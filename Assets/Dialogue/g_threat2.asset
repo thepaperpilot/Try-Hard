@@ -13,4 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portrait: {fileID: 11400000, guid: 20de25f4057e9d04e91527ac960147a5, type: 2}
   text: "Welcome to hell, hero.\r"
-  voice: {fileID: 8300000, guid: dbf23b290c26d3d4b81b5a281991218e, type: 3}
+  voice: {fileID: 8300000, guid: c9ed413d87e8d844990a71b5f76f45fc, type: 3}

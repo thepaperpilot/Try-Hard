@@ -14,4 +14,4 @@ MonoBehaviour:
   portrait: {fileID: 11400000, guid: d4b698b3f92854346900452c249478b5, type: 2}
   text: "Subject 8, please step forward and pick up the transmogrificationerizerization
     gun.\r"
-  voice: {fileID: 8300000, guid: 2ae528b8e4f6e3047ae67666ca6e60bd, type: 3}
+  voice: {fileID: 8300000, guid: 46be4bb306ff0074ca6adfac6ef21308, type: 3}

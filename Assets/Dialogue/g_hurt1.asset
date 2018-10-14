@@ -13,4 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portrait: {fileID: 11400000, guid: 20de25f4057e9d04e91527ac960147a5, type: 2}
   text: "Aaaaaaaaahhhhhh.\r"
-  voice: {fileID: 8300000, guid: 28087688273d0ce4890f6304faf80660, type: 3}
+  voice: {fileID: 8300000, guid: 122df5dc24e047744847f944f9b1699f, type: 3}

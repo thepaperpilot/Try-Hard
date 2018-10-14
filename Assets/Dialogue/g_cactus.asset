@@ -13,4 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portrait: {fileID: 11400000, guid: 20de25f4057e9d04e91527ac960147a5, type: 2}
   text: "*Dejected*\r My cactus!"
-  voice: {fileID: 8300000, guid: a6323043666075a489e437d21ecaa878, type: 3}
+  voice: {fileID: 8300000, guid: d13e0aeb4fbf33d4992a86378b2af075, type: 3}

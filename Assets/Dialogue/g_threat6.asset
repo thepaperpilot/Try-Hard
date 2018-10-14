@@ -13,4 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portrait: {fileID: 11400000, guid: 20de25f4057e9d04e91527ac960147a5, type: 2}
   text: "Let's see you bleed.\r"
-  voice: {fileID: 8300000, guid: 9e155761f03ed04438336597528dca7f, type: 3}
+  voice: {fileID: 8300000, guid: 15b5ca9320c95924cbf9ae416a93ac22, type: 3}
