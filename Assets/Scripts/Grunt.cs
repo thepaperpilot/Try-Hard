@@ -10,10 +10,14 @@ public class Grunt : MonoBehaviour {
     public AudioSource audio;
 
     NavMeshAgent agent;
+    Animator anim;
+
+    public Animation idleAnimation, runAnimation;
 
     void Awake() {
         agent = GetComponent<NavMeshAgent>();
         audio = GetComponent<AudioSource>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     void Update() {
@@ -27,11 +31,13 @@ public class Grunt : MonoBehaviour {
                 }
                 agent.destination = TransformGun.instance.transform.parent.position;
                 agent.isStopped = false;
+                anim.SetBool("isStopped", false);
                 return;
             }
         }
         // If we get here, we didn't see the player
         agent.isStopped = true;
+        anim.SetBool("isStopped", true);
     }
 
     float PlayDialogue(Dialogue[] options) {
