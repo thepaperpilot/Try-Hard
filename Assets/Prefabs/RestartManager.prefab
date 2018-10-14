@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4473187962844136}
   - component: {fileID: 114359497021820084}
+  - component: {fileID: 114162295309965394}
   m_Layer: 0
   m_Name: RestartManager
   m_TagString: Untagged
@@ -40,6 +41,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114162295309965394
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1422074112152378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d51ff3642363c448aafa0e3141b5b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  story:
+  - {fileID: 11400000, guid: f5ca61c0371986a42b7186241a1dd9af, type: 2}
 --- !u!114 &114359497021820084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51,4 +65,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cea46b9c52ad5b444ac948d9d89cd163, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos: {x: 0, y: 100, z: 0}
+  startPos: {x: 0, y: 0, z: -2}
