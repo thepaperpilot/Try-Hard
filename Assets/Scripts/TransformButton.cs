@@ -1,9 +1,15 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
+[RequireComponent(typeof(Image))]
 public class TransformButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
 
     public GameObject transformationResult;
+
+    void Start() {
+        GetComponent<Image>().alphaHitTestMinimumThreshold = 0.01f;
+    }
 
     public void OnPointerEnter(PointerEventData eventData) {
         GameObject gameObject = Object.Instantiate(transformationResult);
