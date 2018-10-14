@@ -30,7 +30,7 @@ public class TransformGun : MonoBehaviour {
             // We right clicked, lets see if we should open the transform menu
             RaycastHit hit;
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 100, Color.yellow, 1);
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, ~(1 << 9))) {
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, ~((1 << 9) + (1 << 11)))) {
                 // We hit something!
                 TransformableObject target = hit.transform.GetComponentInParent<TransformableObject>();
                 if (target) {

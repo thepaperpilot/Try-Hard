@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 136715396521967206}
   m_Layer: 5
   m_Name: Grunt
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -964,9 +964,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.837013, y: 1.89, z: -47.92}
   m_LocalScale: {x: 1.6, y: 1.6, z: 1.6}
-  m_Children:
-  - {fileID: 4320390396190538}
-  - {fileID: 4862425618319552}
+  m_Children: [{fileID: 4320390396190538}, {fileID: 4862425618319552}]
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1333,12 +1331,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e0f2fe2c66eae374b97bfc44368fca9a, type: 2}
   - {fileID: 11400000, guid: 7021f15bd374ff943b07a218810df051, type: 2}
   deathSounds:
-  - {fileID: 11400000, guid: ad7d0b67e97d60a46ab2da3989b280de, type: 2}
-  - {fileID: 11400000, guid: 205898144c3695946928085096efd791, type: 2}
-  - {fileID: 11400000, guid: 372143da601680047be74ccf8f2a9688, type: 2}
-  - {fileID: 11400000, guid: c02268ce86d84374289ba21b1725616b, type: 2}
-  - {fileID: 11400000, guid: b7a25a7aaddec6e4da3c2912ff5afc51, type: 2}
-  audio: {fileID: 0}
+  - {fileID: 11400000, guid: 4c1f1f732da8d4c45aa6aeee793e7752, type: 2}
+  - {fileID: 11400000, guid: a0539e16b82825f43b59de69ee21c884, type: 2}
+  - {fileID: 11400000, guid: 75c6a6c7cd5d33e46906d93de0439afc, type: 2}
+  - {fileID: 11400000, guid: 285f00085f0ee7541b2ccc2adedb1a1c, type: 2}
+  - {fileID: 11400000, guid: 29a6cd46363120846a8ea086abc91539, type: 2}
+  audio: {fileID: 82465837524495778}
   idleAnimation: {fileID: 0}
   runAnimation: {fileID: 0}
 --- !u!136 &136543032362455550
