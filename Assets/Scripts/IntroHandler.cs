@@ -1,10 +1,15 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class IntroHandler : MonoBehaviour {
 
     public StorySegment intro1;
     public StorySegment intro2;
     public StorySegment tutorial1;
+
+    FirstPersonController fps;
+    AudioSource audio;
 
     void Awake() {
         if (RestartManager.instance && RestartManager.instance.introSeen) {
@@ -15,6 +20,11 @@ public class IntroHandler : MonoBehaviour {
         intro1.enabled = false;
         intro2.enabled = false;
         tutorial1.enabled = false;
+
+        fps = GetComponentInParent<FirstPersonController>();
+        audio = GetComponentInParent<AudioSource>();
+        audio.enabled = false;
+        StartCoroutine(DelayDisableFPS());
     }
 
     void PlayIntroOne() {
@@ -27,5 +37,13 @@ public class IntroHandler : MonoBehaviour {
 
     void PlayTutorialOne() {
         tutorial1.enabled = true;
+        fps.enabled = true;
+        audio.enabled = true;
+    }
+
+    IEnumerator DelayDisableFPS() {
+        // We do this so its little initial jitter will happen during the black screen
+        yield return new WaitForSecondsRealtime(1);
+        fps.enabled = false;
     }
 }
