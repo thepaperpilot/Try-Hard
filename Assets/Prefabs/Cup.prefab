@@ -21,8 +21,7 @@ GameObject:
   - component: {fileID: 4058762105049354}
   - component: {fileID: 33352743042141140}
   - component: {fileID: 23176410409992726}
-  - component: {fileID: 136426917387247810}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cupHandelSide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,8 +38,7 @@ GameObject:
   - component: {fileID: 4741321309884464}
   - component: {fileID: 33356669903731450}
   - component: {fileID: 23782794562776244}
-  - component: {fileID: 136723663120681238}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cupHandelBottum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +54,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4523189050662562}
   - component: {fileID: 114065511322719644}
-  m_Layer: 0
+  - component: {fileID: 65605084610152688}
+  - component: {fileID: 54275306260687758}
+  m_Layer: 10
   m_Name: Cup
   m_TagString: transformable
   m_Icon: {fileID: 0}
@@ -73,8 +73,7 @@ GameObject:
   - component: {fileID: 4821613698575380}
   - component: {fileID: 33259006422494468}
   - component: {fileID: 23648355217419312}
-  - component: {fileID: 136326071051145072}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cupBody 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,8 +90,7 @@ GameObject:
   - component: {fileID: 4668092591384562}
   - component: {fileID: 33686163367266932}
   - component: {fileID: 23491350416702522}
-  - component: {fileID: 136055486020071496}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cupHandelTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,6 +334,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1738720279289386}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &54275306260687758
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1257993512416008}
+  serializedVersion: 2
+  m_Mass: 0.65
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65605084610152688
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1257993512416008}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 0.5, z: 0.55}
+  m_Center: {x: -0.1, y: 0, z: 0}
 --- !u!114 &114065511322719644
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -347,55 +372,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30bf39c075a02514bb8a7c8f0400b926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!136 &136055486020071496
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1738720279289386}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!136 &136326071051145072
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1629492553484804}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!136 &136426917387247810
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1144576076856474}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!136 &136723663120681238
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1177961848266292}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}

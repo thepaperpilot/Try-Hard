@@ -80,9 +80,25 @@ GameObject:
   - component: {fileID: 81151907304455490}
   - component: {fileID: 124797888596396746}
   - component: {fileID: 114066954340729678}
+  - component: {fileID: 114549584398725418}
   m_Layer: 9
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1738651931479622
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4882915970646732}
+  m_Layer: 9
+  m_Name: Held Item
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,6 +161,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4539542662318572}
+  - {fileID: 4882915970646732}
   m_Father: {fileID: 4356248183103818}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -173,6 +190,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4164977556221078}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4882915970646732
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1738651931479622}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4536506816914192}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &20176683140831360
 Camera:
@@ -475,6 +505,20 @@ MonoBehaviour:
   fps: {fileID: 114880831908990990}
   deathParticles: {fileID: 1479605903941592}
   bulletTimeSpeed: 0.2
+--- !u!114 &114549584398725418
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1704975078927652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aee830966f64a2419285dce9d6748c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupDistance: 5
+  heldItemContainer: {fileID: 4882915970646732}
+  throwStrength: 500
 --- !u!114 &114639986828912058
 MonoBehaviour:
   m_ObjectHideFlags: 1
