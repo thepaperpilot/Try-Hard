@@ -477,8 +477,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.496
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -571,7 +571,7 @@ Animator:
   m_GameObject: {fileID: 1447270921468032}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b1515632e5fc3e44399ba681cd2d25a2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 85ba969da8cde834399a1834a61b271e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 2
   m_ApplyRootMotion: 0
@@ -614,6 +614,7 @@ MonoBehaviour:
   fps: {fileID: 114880831908990990}
   deathParticles: {fileID: 1479605903941592}
   bulletTimeSpeed: 0.2
+  gunAquired: 0
 --- !u!114 &114132068807536420
 MonoBehaviour:
   m_ObjectHideFlags: 1
