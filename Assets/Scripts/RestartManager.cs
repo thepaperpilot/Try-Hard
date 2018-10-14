@@ -9,6 +9,7 @@ public class RestartManager : MonoBehaviour {
     [SerializeField]
     Vector3 startPos;
     StorySegment story;
+    public bool introSeen;
 
     void Awake() {
         if (instance == null) {

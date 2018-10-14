@@ -36,7 +36,8 @@ public class DialogueManager : MonoBehaviour {
         gameObject.SetActive(true);
         ready = false;
         portrait.enabled = true;
-        portrait.frames = dialogue.portrait.frames;
+        if (dialogue.portrait)
+            portrait.frames = dialogue.portrait.frames;
         text.text = dialogue.text;
         source.PlayOneShot(dialogue.voice);
 
