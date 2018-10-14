@@ -10127,6 +10127,7 @@ GameObject:
   - component: {fileID: 1312930777}
   - component: {fileID: 1312930776}
   - component: {fileID: 1312930775}
+  - component: {fileID: 1312930781}
   m_Layer: 0
   m_Name: A strange device
   m_TagString: Untagged
@@ -10305,8 +10306,21 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 50
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: -33.807003, y: -24.483002, z: 14.217001}
+--- !u!114 &1312930781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1312930774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d51ff3642363c448aafa0e3141b5b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  story:
+  - {fileID: 11400000, guid: 55bec2ab6910adc46a4fa6836459906f, type: 2}
 --- !u!1 &1313569225
 GameObject:
   m_ObjectHideFlags: 0
