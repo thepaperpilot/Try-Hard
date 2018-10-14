@@ -18,6 +18,7 @@ public class Grabber : MonoBehaviour {
                     heldItem = hit.transform.GetComponentInParent<TransformableObject>().transform;
                     heldItem.gameObject.layer = 11;
                     heldItem.SetParent(heldItemContainer);
+                    heldItem.localPosition = Vector3.zero;
                     heldItem.GetComponent<Rigidbody>().isKinematic = true;
                 }
             } else {
